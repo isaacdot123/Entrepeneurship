@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kita:Kuryente</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8fdf9;
+      color: #1f2937;
+    }
+
+    .navbar {
+      background-color: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to right, #ecfdf3, #ffffff);
+      padding: 80px 0;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .hero-title span {
+      color: #16a34a;
+    }
+
+    .hero-text {
+      color: #6b7280;
+      font-size: 1.1rem;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn-main {
+      background-color: #16a34a;
+      color: white;
+      border-radius: 12px;
+      padding: 12px 28px;
+      font-weight: 500;
+      border: none;
+    }
+
+    .btn-main:hover {
+      background-color: #15803d;
+      color: white;
+    }
+
+    .btn-outline-custom {
+      border: 2px solid #16a34a;
+      color: #16a34a;
+      border-radius: 12px;
+      padding: 12px 28px;
+      font-weight: 500;
+    }
+
+    .btn-outline-custom:hover {
+      background-color: #16a34a;
+      color: white;
+    }
+
+    .card-custom {
+      border: none;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      background-color: white;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .section-subtitle {
+      color: #6b7280;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .feature-icon {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+
+    .cta-section {
+      background-color: #16a34a;
+      color: white;
+      border-radius: 30px;
+      padding: 60px 30px;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #d1d5db;
+      padding: 30px 0;
+    }
+
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success fs-3" href="#">Kita:Kuryente</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+
+        <div class="col-lg-6">
+          <h1 class="hero-title">
+            Smarter Electricity Monitoring with <span>Kita:Kuryente</span>
+          </h1>
+
+          <p class="hero-text">
+            Kita:Kuryente helps households and individuals monitor appliance electricity consumption and estimate electricity costs in a simple and accessible platform.
+          </p>
+
+          <div class="d-flex gap-3 flex-wrap justify-content-center justify-content-lg-start">
+            <a href="#features" class="btn btn-main">Explore Features</a>
+            <a href="#contact" class="btn btn-outline-custom">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <div class="card-custom">
+            <h3 class="fw-bold mb-4">Why Kita:Kuryente Matters</h3>
+
+            <div class="mb-4">
+              <h5>Understand Your Electricity Usage</h5>
+              <p class="text-muted">
+                Many households only realize their electricity consumption when the monthly bill arrives.
+              </p>
+            </div>
+
+            <div class="mb-4">
+              <h5>Reduce Unnecessary Expenses</h5>
+              <p class="text-muted">
+                Identify appliances that consume large amounts of electricity and make smarter decisions.
+              </p>
+            </div>
+
+            <div>
+              <h5>Promote Sustainable Living</h5>
+              <p class="text-muted mb-0">
+                Encourage energy-efficient habits that benefit both households and the environment.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="py-5">
+    <div class="container py-5">
+
+      <div class="text-center mb-5">
+        <h2 class="section-title">Key Features</h2>
+        <p class="section-subtitle">
+          Designed to help users monitor electricity usage and improve energy awareness.
+        </p>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card-custom text-center h-100">
+            <div class="feature-icon">⚡</div>
+            <h4>Electricity Monitoring</h4>
+            <p class="text-muted">
+              Track appliance electricity consumption in one platform.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center h-100">
+            <div class="feature-icon">📊</div>
+            <h4>Consumption Insights</h4>
+            <p class="text-muted">
+              Understand how your daily appliance usage affects electricity costs.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-custom text-center h-100">
+            <div class="feature-icon">💡</div>
+            <h4>Smarter Decisions</h4>
+            <p class="text-muted">
+              Promote better budgeting and energy-efficient living.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container py-5 text-center">
+      <h2 class="section-title">About Our Venture</h2>
+
+      <p class="section-subtitle mt-4">
+        Kita:Kuryente is a smart electricity monitoring platform designed to help users become more aware of their energy usage, reduce unnecessary electricity expenses, and promote sustainable consumption habits.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5">
+    <div class="container py-5">
+      <div class="cta-section text-center">
+        <h2 class="fw-bold display-5 mb-3">
+          Take Control of Your Electricity Usage
+        </h2>
+
+        <p class="mb-4 fs-5">
+          Start building smarter and more energy-efficient habits today.
+        </p>
+
+        <a href="#contact" class="btn btn-light btn-lg rounded-4 px-5">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="container text-center">
+      <h4 class="fw-bold text-white">Kita:Kuryente</h4>
+      <p>Email: kitakuryente@gmail.com</p>
+      <p>Phone: +63 912 345 6789</p>
+      <p>Facebook: Kita:Kuryente</p>
+
+      <small>© 2026 Kita:Kuryente. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    console.log('Kita:Kuryente Landing Page Loaded');
+  </script>
+
+</body>
+</html>
